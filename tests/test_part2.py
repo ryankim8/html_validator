@@ -19,8 +19,13 @@ Working on simpler doctests for _extract_tags will be much easier
 than working on the more complicated tests in this file.
 '''
 
-import HTML_Validator
+import os
+import sys
 
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
+
+import HTML_Validator
+import pytest
 
 def test_validate_html_1():
     assert not HTML_Validator.validate_html('this is a <strong test>')
