@@ -50,7 +50,7 @@ def _extract_tags(html):
             end_tag = html.find(">", i)
             if end_tag == -1:
                 raise ValueError("found < without matching >")
-            start_tag = html[i:end_tag+1]
+            start_tag = html[i:end_tag + 1]
             start_tag_items = start_tag.split()
             if len(start_tag_items) > 1:
                 tags_list.append(start_tag_items[0] + ">")
