@@ -5,7 +5,7 @@ You will implement an extended version of the balanced parentheses algorithm tha
 
 <img src=img/foxtrot.png width=100% />
 
-**Learning Objectives:**
+**Learning Objectives:** 
 
 1. implement the balanced parenthesis algorithm
 1. practice using HTML
