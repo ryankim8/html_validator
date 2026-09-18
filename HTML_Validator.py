@@ -2,7 +2,8 @@
 
 def validate_html(html):
     '''
-    This function performs a limited version of html validation by checking whether every opening tag has a corresponding closing tag.
+    This function performs a limited version of html validation
+    by checking whether every opening tag has a corresponding closing tag.
 
     >>> validate_html('<strong>example</strong>')
     True
@@ -23,7 +24,7 @@ def validate_html(html):
             else:
                 return False
     return len(stack) == 0
-    
+
     # HINT:
     # use the _extract_tags function below to generate a list of html tags without any extra text;
     # then process these html tags using the balanced parentheses algorithm from the stack.py file.
